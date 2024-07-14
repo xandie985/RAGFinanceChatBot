@@ -1,0 +1,11 @@
+directories:
+  data_directory: data/docs
+  data_directory_2: data/docs_2
+  persist_directory: data/vectordb/processed/chroma/
+  custom_persist_directory: data/vectordb/uploaded/chroma/
+
+serve:
+  port: 8000
+
+
+  

@@ -23,7 +23,7 @@
 """
 import gradio as gr
 from src.upload_file import UploadFile
-from src.chatbot import ChatBot
+from src.finbot import ChatBot
 from src.ui_settings import UISettings
 
 
@@ -44,45 +44,49 @@ with gr.Blocks() as demo:
                         avatar_images=(
                             ("frontend/images/user.png"), "frontend/images/chatbot.png"),
                     )
-                    # **Adding like/dislike icons
-                    chatbot.like(UISettings.feedback, None, None)
+                    chatbot.like(UISettings.feedback, None, None)  # feedbacks
             # SECOND ROW:
             with gr.Row():
                 input_txt = gr.Textbox(
                     lines=4,
                     scale=8,
-                    placeholder="Enter text and press enter, or upload PDF files",
+                    placeholder="Hi there! Have a question? Ask away! Or, upload your PDFs to find the answers within them.",
                     container=False,
                 )
+                model_choice = gr.Dropdown(
+                    label="Choose model", choices=["gpt-3.5-turbo", "llama3-70b-8192", "mixtral-8x7b-32768"], value="llama3-70b-8192")
 
             # Third ROW:
             with gr.Row() as row_two:
-                text_submit_btn = gr.Button(value="Submit text")
+                text_submit_btn = gr.Button(value="Ask FinGPT 🤗")
                 sidebar_state = gr.State(False)
                 btn_toggle_sidebar = gr.Button(
                     value="References")
-                btn_toggle_sidebar.click(UISettings.toggle_sidebar, [sidebar_state], [
-                    reference_bar, sidebar_state])
+                btn_toggle_sidebar.click(UISettings.toggle_sidebar, 
+                                         [sidebar_state], 
+                                         [reference_bar, sidebar_state]
+                                         )
                 upload_btn = gr.UploadButton(
-                    "📁 Upload PDF or doc files", file_types=[
+                    "Upload you pdf/doc file 📄", file_types=[
                         '.pdf',
                         '.doc'
                     ],
                     file_count="multiple")
                 temperature_bar = gr.Slider(minimum=0, maximum=1, value=0, step=0.1,
-                                            label="Temperature", info="Choose between 0 and 1")
+                                            label="Temperature", info="0: Coherent mode, 1: Creative mode")
                 rag_with_dropdown = gr.Dropdown(
-                    label="RAG with", choices=["Preprocessed doc", "Upload doc: Process for RAG"], value="Preprocessed doc")
+                    label="RAG with", choices=["Existing database", "Upload new data"], value="Preprocessed doc")
                 clear_button = gr.ClearButton([input_txt, chatbot])
             # Backend Process:
             file_msg = upload_btn.upload(fn=UploadFile.process_uploaded_files, inputs=[
-                upload_btn, chatbot, rag_with_dropdown], outputs=[input_txt, chatbot], queue=False)
+                upload_btn, chatbot, rag_with_dropdown, model_choice], outputs=[input_txt, chatbot], queue=False)
 
             txt_msg = input_txt.submit(fn=ChatBot.respond,
                                        inputs=[chatbot,
                                                input_txt,
                                                rag_with_dropdown,
-                                               temperature_bar],
+                                               temperature_bar, 
+                                               model_choice],
                                        outputs=[input_txt,chatbot,
                                                 ref_output],
                                        queue=False).then(lambda: gr.Textbox(interactive=True),
@@ -90,8 +94,11 @@ with gr.Blocks() as demo:
                                                          [input_txt], queue=False)
 
             txt_msg = text_submit_btn.click(fn=ChatBot.respond,
-                                            inputs=[chatbot, input_txt,
-                                                    rag_with_dropdown, temperature_bar],
+                                            inputs=[chatbot, 
+                                                    input_txt,
+                                                    rag_with_dropdown, 
+                                                    temperature_bar,
+                                                    model_choice],
                                             outputs=[input_txt,
                                                      chatbot, ref_output],
                                             queue=False).then(lambda: gr.Textbox(interactive=True),

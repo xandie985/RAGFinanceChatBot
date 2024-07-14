@@ -58,7 +58,8 @@ class LoadConfig:
             app_config = yaml.load(cfg, Loader=yaml.FullLoader)
 
         # llm configs
-        self.llm_model = app_config["llm_config"]["model"]
+        self.gpt_model = app_config["llm_config"]["gpt_model"]
+        self.llama3_70bmodel = app_config["llm_config"]["llama3_70bmodel"]
         self.llm_system_role = app_config["llm_config"]["llm_system_role"]
         self.persist_directory = str(here(app_config["directories"]["persist_directory"]))  # converting to string for adding in chromadb backend: self._settings.require("persist_directory") + "/chroma.sqlite3"
         self.custom_persist_directory = str(here(app_config["directories"]["custom_persist_directory"]))

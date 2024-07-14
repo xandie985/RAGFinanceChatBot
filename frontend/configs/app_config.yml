@@ -27,8 +27,8 @@ llm_config:
     # User question:\n
     New question
     "
-    model: "gpt-3.5-turbo"
-    #model2: "TheBloke/Mistral-7B-Instruct-v0.2-AWQ"
+    gpt_model: "gpt-3.5-turbo"
+    llama3_70bmodel: "llama3-70b-8192"
     temperature: 0.2
     max_token: 4096
 

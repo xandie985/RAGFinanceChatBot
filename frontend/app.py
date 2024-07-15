@@ -42,7 +42,7 @@ with gr.Blocks() as demo:
                         bubble_full_width=False,
                         height=500,
                         avatar_images=(
-                            ("frontend/images/user.png"), "frontend/images/chatbot.png"),
+                            ("images/user.png"), "images/chatbot.png"),
                     )
                     chatbot.like(UISettings.feedback, None, None)  # feedbacks
             # SECOND ROW:

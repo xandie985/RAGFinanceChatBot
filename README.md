@@ -25,8 +25,6 @@ Use PDF files containing financial reports from major public companies:
 
 ## Technologies Used
 
-## Technologies Used
-
 - **Backend:** HTTP Server for serving the backend API.
 - **Frontend:** Gradio for an interactive user interface.
 - **Cloud Services:** Amazon Web Services (AWS) for deployment.

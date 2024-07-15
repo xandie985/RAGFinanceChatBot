@@ -1,4 +1,4 @@
-# Finance Q&A Chatbot Development
+# FinGPT: Let the Financial Reports do the talking
 
 ## Objective
 

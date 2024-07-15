@@ -23,6 +23,16 @@ Use PDF files containing financial reports from major public companies:
 [Presentation](https://www.canva.com/design/DAGKqty7me8/9lvjzDmV2mrsaegoWZjz9Q/view?utm_content=DAGKqty7me8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 
+## Technologies Used
+- **Backend:** HTTP Server for serving the backend API.
+- **Frontend:** Gradio for an interactive user interface.
+- **Cloud Services:** Amazon Web Services (AWS) for deployment.
+- **CI/CD:** GitHub Actions for Continuous Integration, Continuous Delivery, and Continuous Deployment.
+- **RAG Model Evaluation:** RAGAS Library for model evaluation.
+- **Model Monitoring:** LangchainSmith for model monitoring.
+- **Language Models:** GPT-3.5-Turbo, LLaMA3-70B-8192, and Mixtral-8x7B-32768.
+
+
 ## Architecture
 ![Alt text](images/image.png)
 

@@ -77,6 +77,8 @@ Prompts are defined:
 *   A sample query is expanded into multiple sub-queries focusing on different aspects of financial analysis.
 
 ## Testing Nemo Guardrails
+![Alt text](images/image16.png)
+
 *   Nemo Guardrails are introduced as a way to enforce safety and prevent the LLM from generating harmful or irrelevant content.
 *   A custom action `CheckKeywordsRunnable` is registered to check for specific keywords in the text. It considers the configs mentioned in the configuration file as well. 
 *   The guardrails are tested by attempting to generate proprietary information, which is successfully blocked.

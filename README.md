@@ -91,8 +91,21 @@ You can directly test the Chatbot here
 ![Alt text](images/image2.png)
 
 
-Project Organization
+## Project Structure
 ------------
+- **frontend/**: Contains files related to the Gradio-based frontend application, including the main script (`app.py`), configuration files, data, and Dockerfile.
+
+- **backend/**: Includes the backend server for handling API requests, with the main script (`serve.py`), configuration files, requirements, and Dockerfile.
+
+- **notebooks/**: Contains Jupyter notebooks for experimentation, including initial assumptions, data processing, and testing.
+
+- **pytest/**: Directory for pytest with example test files.
+
+- **docker-compose.yaml**: Configuration file for defining and running multi-container Docker applications.
+
+- **.dvc/**: Contains DVC configuration files for data version control, including `.gitignore` and `config`.
+
+
 ```bash
 📦 
 ├─ .dvc

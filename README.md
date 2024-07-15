@@ -105,6 +105,7 @@ Project Organization
 ```
 
 ## Run Locally
+
 1. Clone the project:
 
     ```bash
@@ -139,6 +140,9 @@ Project Organization
 
 4. Open your preferred browser and navigate to [http://localhost:8000/](http://localhost:8000/) & [http://localhost:7860/](http://localhost:7860/)to start using the application.
 
+![Alt text](images/image3.png)
+
+![Alt text](images/image2.png)
 
 
 ## Deployment & Continous Integration & Continous Delivery & Continous Deployment

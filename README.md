@@ -79,16 +79,16 @@ Project Organization
 
 ## Demo Testing on HuggingFace Available
 
-You can directly test the 
+You can directly test the Chatbot here
 ```bash
-Chatbot here: [HuggingFace RAGFinanceChatbot](https://huggingface.co/spaces/sxandie/RAGFinanceChatbot)
+ https://huggingface.co/spaces/sxandie/RAGFinanceChatbot
 ```
 
 ## Run Locally
 1. Clone the project:
 
     ```bash
-    # Insert the repository clone command here
+    https://github.com/xandie985/RAGFinanceChatBot.git
     ```
 
 2. Create a `.env` file in the `frontend` folder with the following content:

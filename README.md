@@ -1,3 +1,5 @@
+# Generative Q&A Chatbot Development
+
 ## Objective
 
 Develop a generative Q&A chatbot that provides factual answers to user queries by referring to a knowledge base created from the PDF files of financial reports from major public companies. The chatbot should use proper grounding techniques to minimize hallucinations and ensure the accuracy of the information.
@@ -9,11 +11,13 @@ Develop a generative Q&A chatbot that provides factual answers to user queries b
 - Ensure the chatbot is grounded in the knowledge base to minimize hallucinations and provide accurate responses.
 
 ## Data
-Use PDF files containing financial reports from major public companies.
 
-Alphabet 2023 : https://abc.xyz/assets/investor/static/pdf/20230203_alphabet_10K.pdf
-Microsoft 2023: https://www.microsoft.com/investor/reports/ar23/
-NVIDIA 2023: https://s201.q4cdn.com/141608511/files/doc_financials/2023/ar/2023-Annual-Report-1.pdf
+Use PDF files containing financial reports from major public companies:
+
+- [Alphabet 2023](https://abc.xyz/assets/investor/static/pdf/20230203_alphabet_10K.pdf)
+- [Microsoft 2023](https://www.microsoft.com/investor/reports/ar23/)
+- [NVIDIA 2023](https://s201.q4cdn.com/141608511/files/doc_financials/2023/ar/2023-Annual-Report-1.pdf)
+
 
 
 Project Organization
@@ -72,39 +76,47 @@ Project Organization
 
 ```
 
-## Demo Testing on HuggingFace Available 
-I suggest you to directly test the Chatbot here 
-https://huggingface.co/spaces/sxandie/RAGFinanceChatbot
 
-## Run locally
-Clone the project:
+## Demo Testing on HuggingFace Available
 
-```bash
+You can directly test the Chatbot here: [HuggingFace RAGFinanceChatbot](https://huggingface.co/spaces/sxandie/RAGFinanceChatbot)
 
-```
+## Run Locally
 
-You need to have a .env file in folder frontend
-HF_TOKEN = 
-OPENAI_API_KEY = 
-GROQ_API_KEY=
-LANGCHAIN_API_KEY=
-PINECONE_API_KEY=
+1. Clone the project:
 
-### Set up and run the app with Docker
+    ```bash
+    # Insert the repository clone command here
+    ```
 
-1) open Docker Desktop application 
+2. Create a `.env` file in the `frontend` folder with the following content:
 
-2) Build the Docker container:
-```bash
-docker-compose build
-```
+    ```env
+    HF_TOKEN=
+    OPENAI_API_KEY=
+    GROQ_API_KEY=
+    LANGCHAIN_API_KEY=
+    PINECONE_API_KEY=
+    ```
 
-3) Run the Docker container:
-```bash
-docker-compose up 
-```
+### Set Up and Run the App with Docker
 
-4) Open your preferred browser and navigate to http://127.0.0.1:7860/ to start using the application.
+1. Open Docker Desktop application.
+
+2. Build the Docker container:
+
+    ```bash
+    docker-compose build
+    ```
+
+3. Run the Docker container:
+
+    ```bash
+    docker-compose up
+    ```
+
+4. Open your preferred browser and navigate to [http://127.0.0.1:7860/](http://127.0.0.1:7860/) to start using the application.
+
 
 
 ## Deployment & Continous Integration & Continous Delivery & Continous Deployment

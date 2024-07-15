@@ -117,7 +117,7 @@ Chatbot here: [HuggingFace RAGFinanceChatbot](https://huggingface.co/spaces/sxan
     docker-compose up
     ```
 
-4. Open your preferred browser and navigate to [http://127.0.0.1:7860/](http://127.0.0.1:7860/) to start using the application.
+4. Open your preferred browser and navigate to [http://localhost:8000/](http://localhost:8000/) & [http://localhost:7860/](http://localhost:7860/)to start using the application.
 
 
 

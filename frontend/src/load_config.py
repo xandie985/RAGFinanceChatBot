@@ -68,6 +68,7 @@ class LoadConfig:
         # Retrieval configs
         self.data_directory = app_config["directories"]["data_directory"]
         self.k = app_config["retrieval_config"]["k"]
+        self.num_of_final_doc = app_config["retrieval_config"]["num_of_final_doc"]
         self.embedding_model_engine = app_config["embedding_model_config"]["engine"]
         self.chunk_size = app_config["splitter_config"]["chunk_size"]
         self.chunk_overlap = app_config["splitter_config"]["chunk_overlap"]
@@ -76,6 +77,7 @@ class LoadConfig:
 
         # Memory
         self.qa_pair_count = app_config["memory"]["qa_pair_count"]
+        
 
         # Load OpenAI credentials
         #self.load_openai_cfg()

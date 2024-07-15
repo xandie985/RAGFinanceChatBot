@@ -5,7 +5,8 @@ directories:
   custom_persist_directory: data/vectordb/uploaded/chroma/
 
 embedding_model_config:
-  engine: "text-embedding-ada-002"
+  engine: "text-embedding-ada-002" 
+  #engine: "Alibaba-NLP/gte-base-en-v1.5"
 
 llm_config:
     llm_system_role: "You are the The Best Financial Research Analyst. \
@@ -38,13 +39,16 @@ splitter_config:
 
 # how many relevant nodes to return
 retrieval_config:
-  k: 3
+  k: 5
+  num_of_final_doc: 3 # for reranking
 
 serve:
   port: 8000
 
 memory:
   qa_pair_count: 2
+
+
 
 
   

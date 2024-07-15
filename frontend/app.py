@@ -75,7 +75,7 @@ with gr.Blocks() as demo:
                 temperature_bar = gr.Slider(minimum=0, maximum=1, value=0, step=0.1,
                                             label="Temperature", info="0: Coherent mode, 1: Creative mode")
                 rag_with_dropdown = gr.Dropdown(
-                    label="RAG with", choices=["Existing database", "Upload new data"], value="Preprocessed doc")
+                    label="RAG with", choices=["Existing database", "Upload new data"], value="Existing database")
                 clear_button = gr.ClearButton([input_txt, chatbot])
             # Backend Process:
             file_msg = upload_btn.upload(fn=UploadFile.process_uploaded_files, inputs=[

@@ -1,7 +1,11 @@
 
 import os
-from utils.prepare_vectordb import PrepareVectorDB
-from utils.load_config import LoadConfig
+
+#comment this if OPENAI EMbeddings are requireed 
+#from prepare_bgesmall_vectordb import PrepareVectorDB
+from prepare_openAIEmbeddings_vectordb import PrepareVectorDB
+
+from load_config import LoadConfig
 CONFIG = LoadConfig()
 
 

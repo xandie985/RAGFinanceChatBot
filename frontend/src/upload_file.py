@@ -1,4 +1,4 @@
-from src.prepare_vectordb import PrepareVectorDB
+from src.prepare_openAIEmbeddings_vectordb import PrepareVectorDB
 from typing import List, Tuple
 from src.load_config import LoadConfig
 

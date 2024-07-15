@@ -237,6 +237,8 @@ To manage the data versions with DVC using the below commands:
     ```
 ![Alt text](images/image6.png)
 
+## Langsmith Monitoring 
+![Alt text](images/langsmithMonitoring.png)
 
 ## References
 

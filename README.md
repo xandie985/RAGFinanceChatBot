@@ -92,7 +92,7 @@ You can directly test the Chatbot here
 
 
 ## Project Structure
-------------
+
 - **frontend/**: Contains files related to the Gradio-based frontend application, including the main script (`app.py`), configuration files, data, and Dockerfile.
 
 - **backend/**: Includes the backend server for handling API requests, with the main script (`serve.py`), configuration files, requirements, and Dockerfile.

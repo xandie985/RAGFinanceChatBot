@@ -35,6 +35,7 @@ Use PDF files containing financial reports from major public companies:
 - **Data Version Control:** DVC for storing documents and vector databases in an AWS S3 bucket.
 - **Containerization:** Docker for containerizing applications.
 - **Container Orchestration:** Docker Compose for defining and running multi-container Docker applications.
+- **Guardrails:** Nemo GuardRails for implementing safety and compliance measures in AI models.
 
 
 ## Architecture

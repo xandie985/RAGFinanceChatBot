@@ -25,6 +25,8 @@ Use PDF files containing financial reports from major public companies:
 
 ## Technologies Used
 
+## Technologies Used
+
 - **Backend:** HTTP Server for serving the backend API.
 - **Frontend:** Gradio for an interactive user interface.
 - **Cloud Services:** Amazon Web Services (AWS) for deployment.
@@ -33,7 +35,8 @@ Use PDF files containing financial reports from major public companies:
 - **Model Monitoring:** LangchainSmith for model monitoring.
 - **Language Models:** GPT-3.5-Turbo, LLaMA3-70B-8192, and Mixtral-8x7B-32768.
 - **Data Version Control:** DVC for storing documents and vector databases in an AWS S3 bucket.
-
+- **Containerization:** Docker for containerizing applications.
+- **Container Orchestration:** Docker Compose for defining and running multi-container Docker applications.
 
 
 ## Architecture

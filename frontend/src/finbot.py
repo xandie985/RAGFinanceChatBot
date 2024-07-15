@@ -134,10 +134,9 @@ class ChatBot:
         markdown_documents = ""
         counter = 1
         for doc in documents:
-            content, metadata = ChatBot.extract_content(doc)
+            content, metadata = re.match(r"page_content=(.*?)( metadata=\{.*\})", doc).groups()
+            metadata = metadata.split('=', 1)[1]
             metadata_dict = ast.literal_eval(metadata)
-
-            print("content: ", content)
             content = bytes(content, "utf-8").decode("unicode_escape")
             content = re.sub(r'\\n', '\n', content)
             content = re.sub(r'\s*<EOS>\s*<pad>\s*', ' ', content)

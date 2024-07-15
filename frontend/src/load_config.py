@@ -54,7 +54,7 @@ class LoadConfig:
     """
 
     def __init__(self) -> None:
-        with open(here("frontend/configs/app_config.yml")) as cfg:
+        with open(here("configs/app_config.yml")) as cfg:
             app_config = yaml.load(cfg, Loader=yaml.FullLoader)
 
         # llm configs

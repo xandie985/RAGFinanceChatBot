@@ -4,7 +4,7 @@ import yaml
 import os
 from pyprojroot import here
 
-with open(here("configs/app_config.yml")) as cfg:
+with open("configs/app_config.yml") as cfg: # with open("configs/app_config.yml") as cfg:
     app_config = yaml.load(cfg, Loader=yaml.FullLoader)
 
 PORT = app_config["serve"]["port"]

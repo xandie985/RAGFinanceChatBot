@@ -22,8 +22,20 @@ Use PDF files containing financial reports from major public companies:
 ## Must Visit Presentation 
 [Presentation](https://www.canva.com/design/DAGKqty7me8/9lvjzDmV2mrsaegoWZjz9Q/view?utm_content=DAGKqty7me8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-## Features
+## Experiments 
 
+* Query Rewriting
+* Query Expansion
+* Recursive Text Splitter 
+![Alt text](images/image11.png)
+![Alt text](images/image12.png)
+
+* Chunking and Processing data with UNStRCUCTRED.io
+* Splitting documents via SemanticChunker
+* Reranking
+* prompt compression and rank relevant docs
+* Nemo Gaurdrailings
+* RAGAS Evaluation 
 
 
 ## Technologies Used

@@ -19,6 +19,19 @@ Use PDF files containing financial reports from major public companies:
 - [NVIDIA 2023](https://s201.q4cdn.com/141608511/files/doc_financials/2023/ar/2023-Annual-Report-1.pdf)
 
 
+## Presentation 
+[Presentation Available]()
+
+
+## Architecture
+![Alt text](images/image.png)
+
+## Demo Testing on HuggingFace Available
+
+You can directly test the Chatbot here
+```bash
+ https://huggingface.co/spaces/sxandie/RAGFinanceChatbot
+```
 
 Project Organization
 ------------
@@ -90,15 +103,6 @@ Project Organization
 └─ pytest
    └─ dummy_test.py
 ```
-## Architecture
-![Alt text](images/image.png)
-
-## Demo Testing on HuggingFace Available
-
-You can directly test the Chatbot here
-```bash
- https://huggingface.co/spaces/sxandie/RAGFinanceChatbot
-```
 
 ## Run Locally
 1. Clone the project:
@@ -107,7 +111,7 @@ You can directly test the Chatbot here
     https://github.com/xandie985/RAGFinanceChatBot.git
     ```
 
-2. Create a `.env` file in the `frontend` folder with the following content:
+2. Create a `.env` file in the `frontend/src/.env` folder with the following content:
 
     ```env
     HF_TOKEN=
@@ -219,5 +223,10 @@ To manage your data versions with DVC using the below commands:
     dvc push
     ```
 
-## Presentation 
-[Presentation Available]()
+## References
+
+- [Searching for Best Practices in Retrieval-Augmented Generation](https://arxiv.org/html/2407.01219v1)
+- [Python LangChain Documentation](https://python.langchain.com/v0.1/docs/modules/data_connection/document_loaders/)
+- [LangChain LangSmith](https://www.langchain.com/langsmith)
+- [RAGAS Evaluation](https://github.com/explodinggradients/ragas)
+- [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)

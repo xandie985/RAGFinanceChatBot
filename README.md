@@ -33,6 +33,8 @@ You can directly test the Chatbot here
  https://huggingface.co/spaces/sxandie/RAGFinanceChatbot
 ```
 
+![Alt text](images/image4.png)
+
 Project Organization
 ------------
 ```bash

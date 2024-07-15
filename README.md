@@ -90,7 +90,8 @@ Project Organization
 └─ pytest
    └─ dummy_test.py
 ```
-
+## Architecture
+![Alt text](images/image.png)
 
 ## Demo Testing on HuggingFace Available
 

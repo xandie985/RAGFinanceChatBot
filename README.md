@@ -23,6 +23,7 @@ Use PDF files containing financial reports from major public companies:
 [Presentation](https://www.canva.com/design/DAGKqty7me8/9lvjzDmV2mrsaegoWZjz9Q/view?utm_content=DAGKqty7me8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Experiments 
+For more information about the experiments, please refer to the [Experiment Report](https://github.com/xandie985/RAGFinanceChatBot/blob/main/Experiment%20Report.md).
 
 * Query Rewriting
 * Query Expansion

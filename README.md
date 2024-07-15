@@ -200,6 +200,8 @@ AWS_ECR_LOGIN_URI =
 BACKEND_ECR_REPOSITORY_NAME=
 FRONTEND_ECR_REPOSITORY_NAME=
 ```
+![Alt text](images/image7.png)
+
 
 ### Run Tests
 These tests ensure that the code handles different scenarios correctly:
@@ -209,6 +211,7 @@ Run the tests:
 ```bash
 pytest
 ```
+![Alt text](images/image8.png)
 
 ## Data Version Control (DVC) Setup
 

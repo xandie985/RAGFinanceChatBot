@@ -58,7 +58,7 @@ Prompts are defined:
 *   The original query is modified to be more specific and relevant for financial analysis.
 
 ## Testing Reranking
-
+![Alt text](images/image15.png)
 *   `ColBERT` is used for reranking relevant documents to improve retrieval accuracy.
 *   The code demonstrates how to load the `ColBERT` tokenizer and model.
 *   The `maxsim` function calculates the maximum similarity between query and document embeddings.

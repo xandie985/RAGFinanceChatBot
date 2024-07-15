@@ -35,6 +35,47 @@ You can directly test the Chatbot here
 
 ![Alt text](images/image4.png)
 
+## Run Locally
+
+1. Clone the project:
+
+    ```bash
+    https://github.com/xandie985/RAGFinanceChatBot.git
+    ```
+
+2. Create a `.env` file in the `frontend/src/.env` folder with the following content:
+
+    ```env
+    HF_TOKEN=
+    OPENAI_API_KEY=
+    GROQ_API_KEY=
+    LANGCHAIN_API_KEY=
+    PINECONE_API_KEY=
+    ```
+
+### Set Up and Run the App with Docker
+
+1. Open Docker Desktop application.
+
+2. Build the Docker container:
+
+    ```bash
+    docker-compose build
+    ```
+
+3. Run the Docker container:
+
+    ```bash
+    docker-compose up
+    ```
+
+4. Open your preferred browser and navigate to [http://localhost:8000/](http://localhost:8000/) & [http://localhost:7860/](http://localhost:7860/)to start using the application.
+
+![Alt text](images/image3.png)
+
+![Alt text](images/image2.png)
+
+
 Project Organization
 ------------
 ```bash
@@ -105,47 +146,6 @@ Project Organization
 └─ pytest
    └─ dummy_test.py
 ```
-
-## Run Locally
-
-1. Clone the project:
-
-    ```bash
-    https://github.com/xandie985/RAGFinanceChatBot.git
-    ```
-
-2. Create a `.env` file in the `frontend/src/.env` folder with the following content:
-
-    ```env
-    HF_TOKEN=
-    OPENAI_API_KEY=
-    GROQ_API_KEY=
-    LANGCHAIN_API_KEY=
-    PINECONE_API_KEY=
-    ```
-
-### Set Up and Run the App with Docker
-
-1. Open Docker Desktop application.
-
-2. Build the Docker container:
-
-    ```bash
-    docker-compose build
-    ```
-
-3. Run the Docker container:
-
-    ```bash
-    docker-compose up
-    ```
-
-4. Open your preferred browser and navigate to [http://localhost:8000/](http://localhost:8000/) & [http://localhost:7860/](http://localhost:7860/)to start using the application.
-
-![Alt text](images/image3.png)
-
-![Alt text](images/image2.png)
-
 
 ## Deployment & CI/CD Pipeline Github Actions
 The below steps followed to do perform deployment.

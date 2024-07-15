@@ -1,4 +1,4 @@
-# Generative Q&A Chatbot Development
+# Finance Q&A Chatbot Development
 
 ## Objective
 
@@ -79,10 +79,12 @@ Project Organization
 
 ## Demo Testing on HuggingFace Available
 
-You can directly test the Chatbot here: [HuggingFace RAGFinanceChatbot](https://huggingface.co/spaces/sxandie/RAGFinanceChatbot)
+You can directly test the 
+```bash
+Chatbot here: [HuggingFace RAGFinanceChatbot](https://huggingface.co/spaces/sxandie/RAGFinanceChatbot)
+```
 
 ## Run Locally
-
 1. Clone the project:
 
     ```bash
@@ -178,3 +180,28 @@ Run the tests:
 ```bash
 pytest
 ```
+
+## Data Version Control (DVC) Setup
+
+The dataset has been added to the AWS S3 bucket.
+
+## Managing Data Versions with DVC
+
+To manage your data versions with DVC using the below commands:
+
+1. **Add a remote storage**:
+    ```bash
+    dvc remote add -d myremote s3://mybucket
+    ```
+2. **Set your AWS credentials**:
+    ```bash
+    export AWS_ACCESS_KEY_ID='myid'
+    export AWS_SECRET_ACCESS_KEY='mysecret'
+    ```
+3. **Push your data to the remote storage**:
+    ```bash
+    dvc push
+    ```
+
+## Presentation 
+[Presentation Available]()

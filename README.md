@@ -147,7 +147,9 @@ Project Organization
 ![Alt text](images/image2.png)
 
 
-## Deployment & Continous Integration & Continous Delivery & Continous Deployment
+## Deployment & CI/CD Pipeline Github Actions
+The below steps followed to do perform deployment.
+Note: I used my AWS account for deployment but have since removed all resources to avoid incurring charges.
 
 #### 1. Login to AWS console.
 #### 2. Create IAM user for deployment
@@ -210,10 +212,10 @@ pytest
 
 ## Data Version Control (DVC) Setup
 
-The dataset has been added to the AWS S3 bucket.
+The dataset & Vector database has been added to the AWS S3 bucket.
 Managing Data Versions with DVC
 
-To manage your data versions with DVC using the below commands:
+To manage the data versions with DVC using the below commands:
 
 1. **Add a remote storage**:
     ```bash
@@ -228,6 +230,8 @@ To manage your data versions with DVC using the below commands:
     ```bash
     dvc push
     ```
+![Alt text](images/image6.png)
+
 
 ## References
 

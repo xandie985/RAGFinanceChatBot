@@ -1,5 +1,7 @@
 # Experiments with FinGPT
 
+All the results are presented here: [Results](https://github.com/xandie985/RAGFinanceChatBot/blob/main/notebooks/langsmith_groq_openaiembed.ipynb).
+
 ## Introduction
 
 This report contains experiments conducted to enhance the FinGPT model, a financial research analyst tool. The experiments cover various data, models, and techniques, some of which require further testing before integration. The goal is to provide a proof of concept (POC) and illustrate key ideas for model improvement.
@@ -24,12 +26,13 @@ Prompts are defined:
 ## Splitting Documents
 
 ### Recursive Character Text Splitter (RCTS)
+![Alt text](images/image11.png)
 
 *   The `split_documentsRCTS` function splits documents into chunks using RCTS, considering separators like newlines and spaces.
 *   Chunk lengths and word counts are calculated and visualized using histograms.
 
 ### Unstructured.io Chunking
-
+![Alt text](images/image12.png)
 *   This section explores using Unstructured.io for chunking, highlighting its ability to extract tables and read images within PDFs.
 *   Due to library issues and time constraints, the latest version of the code for this section is not executed. The existing code and output represents the older versions. 
 
@@ -74,7 +77,6 @@ Prompts are defined:
 *   A sample query is expanded into multiple sub-queries focusing on different aspects of financial analysis.
 
 ## Testing Nemo Guardrails
-
 *   Nemo Guardrails are introduced as a way to enforce safety and prevent the LLM from generating harmful or irrelevant content.
 *   A custom action `CheckKeywordsRunnable` is registered to check for specific keywords in the text. It considers the configs mentioned in the configuration file as well. 
 *   The guardrails are tested by attempting to generate proprietary information, which is successfully blocked.
@@ -86,6 +88,7 @@ Prompts are defined:
     2.  Creating a golden dataset with human annotations or high-quality models for comparison and evaluation.
 
 ### Using RAGAS
+![Alt text](images/image13.png)
 
 *   The RAGAS library is introduced for evaluating the RAG system.
 *   Sample questions, ground truths, and contexts are defined.

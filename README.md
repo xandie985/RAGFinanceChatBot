@@ -19,8 +19,8 @@ Use PDF files containing financial reports from major public companies:
 - [NVIDIA 2023](https://s201.q4cdn.com/141608511/files/doc_financials/2023/ar/2023-Annual-Report-1.pdf)
 
 
-## Presentation 
-[Presentation Available]()
+## Must Visit Presentation 
+[Presentation](https://www.canva.com/design/DAGKqty7me8/9lvjzDmV2mrsaegoWZjz9Q/view?utm_content=DAGKqty7me8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 
 ## Architecture

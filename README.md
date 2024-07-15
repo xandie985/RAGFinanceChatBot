@@ -24,56 +24,71 @@ Project Organization
 ------------
 ```bash
 📦 
-├─ `.DS_Store`
-├─ `.dvc`
-│  ├─ `.gitignore`
-│  └─ `config`
-├─ `.dvcignore`
-├─ `.github`
-│  └─ `workflows`
-│     └─ `main.yml`
-├─ `HELPER.md`
-├─ `README.md`
-├─ `backend`
-│  ├─ `.gitignore`
-│  ├─ `Dockerfile`
-│  ├─ `configs`
-│  │  └─ `app_config.yml`
-│  ├─ `requirements.txt`
-│  └─ `serve.py`
-├─ `docker-compose.yaml`
-├─ `frontend`
-│  ├─ `.gitignore`
-│  ├─ `Dockerfile`
-│  ├─ `app.py`
-│  ├─ `configs`
-│  │  └─ `app_config.yml`
-│  ├─ `data`
-│  │  ├─ `.gitignore`
-│  │  ├─ `docs.dvc`
-│  │  └─ `vectordb`
-│  │     ├─ `.gitignore`
-│  │     ├─ `processed.dvc`
-│  │     └─ `uploaded.dvc`
-│  ├─ `images`
-│  │  ├─ `chatbot.png`
-│  │  └─ `user.png`
-│  ├─ `requirements.txt`
-│  └─ `src`
-│     ├─ `__init__.py`
-│     ├─ `chatbot.py`
-│     ├─ `load_config.py`
-│     ├─ `prepare_vectordb.py`
-│     ├─ `ui_settings.py`
-│     ├─ `upload_data_manually.py`
-│     ├─ `upload_file.py`
-│     └─ `utilities.py`
-├─ `log.txt`
-└─ `notebooks`
-   ├─ `config`
-   │  └─ `config.yml`
-   └─ `langsmith_groq_openaiembed.ipynb`
-
+├─ .dvc
+│  ├─ .gitignore
+│  └─ config
+├─ .dvcignore
+├─ .github
+│  └─ workflows
+│     └─ main.yml
+├─ .gitignore
+├─ HELPER.md
+├─ README.md
+├─ backend
+│  ├─ Dockerfile
+│  ├─ configs
+│  │  └─ app_config.yml
+│  ├─ requirements.txt
+│  └─ serve.py
+├─ docker-compose.yaml
+├─ frontend
+│  ├─ Dockerfile
+│  ├─ app.py
+│  ├─ configs
+│  │  └─ app_config.yml
+│  ├─ data
+│  │  ├─ docs
+│  │  │  ├─ alphabet-2023.pdf
+│  │  │  └─ microsoft-2023.pdf
+│  │  └─ vectordb
+│  │     └─ processed
+│  │        └─ chroma
+│  │           ├─ chroma.sqlite3
+│  │           └─ f926420f-492c-48a8-a50b-448a3a18a87a
+│  │              ├─ data_level0.bin
+│  │              ├─ header.bin
+│  │              ├─ index_metadata.pickle
+│  │              ├─ length.bin
+│  │              └─ link_lists.bin
+│  ├─ images
+│  │  ├─ chatbot.png
+│  │  └─ user.png
+│  ├─ requirements.txt
+│  └─ src
+│     ├─ __init__.py
+│     ├─ finbot.py
+│     ├─ load_config.py
+│     ├─ prepare_bgesmall_vectordb.py
+│     ├─ prepare_openAIEmbeddings_vectordb.py
+│     ├─ ui_settings.py
+│     ├─ upload_data_manually.py
+│     └─ upload_file.py
+├─ log.txt
+├─ notebooks
+│  ├─ config
+│  │  └─ config.yml
+│  ├─ langsmith_groq_openaiembed.ipynb
+│  ├─ processed_data
+│  │  ├─ chroma.sqlite3
+│  │  └─ f01ca3c9-e477-42c2-a127-6c44abc22708
+│  │     ├─ data_level0.bin
+│  │     ├─ header.bin
+│  │     ├─ index_metadata.pickle
+│  │     ├─ length.bin
+│  │     └─ link_lists.bin
+│  └─ test.ipynb
+└─ pytest
+   └─ dummy_test.py
 ```
 
 

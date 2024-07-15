@@ -65,7 +65,7 @@ Prompts are defined:
 *   The reranking process is timed, and the top 5 reranked documents are printed.
 
 ## Prompt Compression and Ranking Relevant Docs
-
+![Alt text](images/image14.png)
 *   The `llmlingua` library is used for prompt compression to reduce token length and potentially improve LLM performance.
 *   The `compress_query_prompt` function compresses the prompt based on demonstrations, instructions, and a target token length.
 *   The compression results are printed, showing a significant reduction in token length.

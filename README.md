@@ -184,8 +184,7 @@ pytest
 ## Data Version Control (DVC) Setup
 
 The dataset has been added to the AWS S3 bucket.
-
-## Managing Data Versions with DVC
+Managing Data Versions with DVC
 
 To manage your data versions with DVC using the below commands:
 

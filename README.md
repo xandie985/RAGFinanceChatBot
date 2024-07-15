@@ -275,3 +275,7 @@ To manage the data versions with DVC using the below commands:
 - [LangChain LangSmith](https://www.langchain.com/langsmith)
 - [RAGAS Evaluation](https://github.com/explodinggradients/ragas)
 - [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
+
+
+## Author
+The project was developed by Sandeep Kumar Kushwaha. Connect with me on [LinkedIn](https://www.linkedin.com/in/xandie985/).

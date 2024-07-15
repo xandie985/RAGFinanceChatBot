@@ -202,6 +202,8 @@ FRONTEND_ECR_REPOSITORY_NAME=
 ```
 ![Alt text](images/image8.png)
 
+![Alt text](images/image10.png)
+
 
 ### Run Tests
 These tests ensure that the code handles different scenarios correctly:

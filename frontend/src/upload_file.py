@@ -20,8 +20,8 @@ class UploadFile:
 
         Parameters:
             files_dir (List): List of paths to the uploaded files.
-            chatbot: An instance of the chatbot for communication.
-
+            chatbot (List): An instance of the chatbot for communication.
+            rag_with_dropdown (str): provides whether to perform RAG on new docs.
         Returns:
             Tuple: A tuple containing an empty string and the updated chatbot instance.
         """

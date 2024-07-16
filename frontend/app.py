@@ -6,7 +6,7 @@
     reference bar initially. The reference bar can be toggled using a button. The chatbot supports feedback in the form
     of like and dislike icons.
 
-    2. The second row consists of a Textbox for user input. Users can enter text or upload PDF/doc files.
+    2. The second row consists of a Textbox for user input. He can also choose the model to work with.
 
     3. The third row includes buttons for submitting text, toggling the reference bar visibility, uploading PDF/doc files,
     adjusting temperature for GPT responses, selecting the document type, and clearing the input.

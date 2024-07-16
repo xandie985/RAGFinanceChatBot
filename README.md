@@ -1,5 +1,6 @@
 # FinGPT: Let the Financial Reports do the talking
 
+Chatbot access on HuggingFace: [Link to Space](https://huggingface.co/playground-llm)
 ## Objective
 
 Develop a generative Q&A chatbot that provides factual answers to user queries by referring to a knowledge base created from the PDF files of financial reports from major public companies. The chatbot should use proper grounding techniques to minimize hallucinations and ensure the accuracy of the information.
@@ -19,7 +20,7 @@ Use PDF files containing financial reports from major public companies:
 - [NVIDIA 2023](https://s201.q4cdn.com/141608511/files/doc_financials/2023/ar/2023-Annual-Report-1.pdf)
 
 
-## Must Visit Presentation 
+## Presentation 
 [Presentation](https://www.canva.com/design/DAGKqty7me8/9lvjzDmV2mrsaegoWZjz9Q/view?utm_content=DAGKqty7me8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Experiments 
@@ -28,10 +29,7 @@ For more information about the experiments, please refer to the [Experiment Repo
 * Query Rewriting
 * Query Expansion
 * Recursive Text Splitter 
-![Alt text](images/image11.png)
-![Alt text](images/image12.png)
-
-* Chunking and Processing data with UNStRCUCTRED.io
+* Chunking and Processing data with UNSTRCUCTRED.io
 * Splitting documents via SemanticChunker
 * Reranking
 * prompt compression and rank relevant docs

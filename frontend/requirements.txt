@@ -5,6 +5,7 @@ langchain
 langchain-community
 langchain-core
 langchain-openai
+langchain-openai>=0.3.8
 langchain-text-splitters
 aiofiles
 aiohttp

@@ -28,7 +28,7 @@ llm_config:
     # User question:\n
     New question
     "
-    gpt_model: "gpt-3.5-turbo"
+    gpt_model: "gpt-4o-mini"
     llama3_70bmodel: "llama3-70b-8192"
     temperature: 0.2
     max_token: 4096

@@ -45,7 +45,7 @@ For more information about the experiments, please refer to the [Experiment Repo
 - **CI/CD:** GitHub Actions for Continuous Integration, Continuous Delivery, and Continuous Deployment.
 - **RAG Model Evaluation:** RAGAS Library for model evaluation.
 - **Model Monitoring:** LangchainSmith for model monitoring.
-- **Language Models:** GPT-3.5-Turbo, LLaMA3-70B-8192, and Mixtral-8x7B-32768.
+- **Language Models:** gpt-4o-mini, LLaMA3-70B-8192, and Mixtral-8x7B-32768.
 - **Data Version Control:** DVC for storing documents and vector databases in an AWS S3 bucket.
 - **Containerization:** Docker for containerizing applications.
 - **Container Orchestration:** Docker Compose for defining and running multi-container Docker applications.

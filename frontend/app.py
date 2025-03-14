@@ -54,7 +54,7 @@ with gr.Blocks() as demo:
                     container=False,
                 )
                 model_choice = gr.Dropdown(
-                    label="Choose model", choices=["gpt-3.5-turbo", "llama3-70b-8192", "mixtral-8x7b-32768"], value="llama3-70b-8192")
+                    label="Choose model", choices=["gpt-4o-mini", "llama3-70b-8192", "mixtral-8x7b-32768"], value="llama3-70b-8192")
 
             # Third ROW:
             with gr.Row() as row_two:
